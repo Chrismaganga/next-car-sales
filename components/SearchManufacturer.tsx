@@ -1,10 +1,11 @@
-import Image from "next/image";
-import { Fragment, JSXElementConstructor, Key, PromiseLikeOfReactNode, ReactElement, ReactNode, useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+
 import { Combobox, Transition } from "@headlessui/react";
+import { Fragment, JSXElementConstructor, Key, PromiseLikeOfReactNode, ReactElement, ReactNode, useState } from "react";
 
-import { manufacturers } from "../constants";
+import Image from "next/image";
 import { SearchManuFacturerProps } from "../types";
-
+import { manufacturers } from "../constants";
 
 const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacturerProps) => {
   const [query, setQuery] = useState("");

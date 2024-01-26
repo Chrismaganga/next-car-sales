@@ -1,7 +1,10 @@
-import { fetchCars } from "../utils";
-import { HomeProps } from "../types";
+/* eslint-disable react/jsx-key */
+
+import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from "../components";
 import { fuels, yearsOfProduction } from "../constants";
-import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "../components";
+
+import { HomeProps } from "../types";
+import { fetchCars } from "../utils";
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({
